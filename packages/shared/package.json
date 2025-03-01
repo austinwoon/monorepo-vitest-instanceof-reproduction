@@ -1,0 +1,29 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./util/*": {
+      "types": "./dist/util/*.d.ts",
+      "import": "./dist/util/*.js",
+      "require": "./dist/util/*.js"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "errors": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "rimraf": "^5.0.5"
+  }
+}
