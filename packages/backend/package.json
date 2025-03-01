@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && tsc",
-    "test": "vitest ."
+    "test": "vitest .",
+    "start": "node dist/start.js"
   },
   "dependencies": {
     "shared": "workspace:*",
